@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	position: absolute;
+	transform: translate(0%, 100%);
+	width: 100%;
+	line-height: 30vh;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+	font-size: 30vh;
+	text-align: center;
+	color: #f0f;
+	text-shadow: 1vh 1vh 0vh #ff0;
+}
+
+.servo-stats {
+    font-family: Helvetica, sans;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: #666;
+    color: #fff;
+    display: inline-block;
+    z-index: 999;
+}
+
+.servo-stats li {
+    list-style: none;
+}
+
+
+img {
+	transition: all 1s ease-in-out;
+}
+
+#container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#container img {
+	position: absolute;
+}
+
+#fpsGraph {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 999;
+    box-shadow: 3px 3px 5px #7C7C7C;
+    opacity: 0.9;
+    transition: 0.5s opacity ease-in-out;
+}
+
+#fpsGraph:hover {
+	opacity: 1;
+}
